@@ -1,0 +1,258 @@
+* {
+  margin: 0;
+  position: 0;
+  box-sizing: border-box;
+}
+
+body {
+  justify-content: center;
+  background: linear-gradient(to right, #7741e3, #a172c9);
+}
+
+input {
+  border: none;
+  border-radius: 5px 5px;
+  box-shadow: 10px 3px 3px rgb(82, 81, 81);
+}
+
+.container {
+  display: flex;
+  position: relative;
+  transform: translate(-10%, -30%);
+  border-radius: 10px 10px;
+}
+
+.contenedor-agenda {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  top: 1px;
+}
+
+.titulo {
+  position: relative;
+  transform: translate(0.5%, 1%);
+  font-size: 40px;
+  text-align: center;
+  border-radius: 10px 10px;
+  text-shadow: 10px 3px 3px rgb(0, 195, 255);
+}
+
+.formulario-agrega {
+  position: relative;
+  width: 80%;
+  height: 100%;
+  margin-top: 2%;
+  display: flex;
+  flex-direction: column;
+  left: 10%;
+}
+
+.btn-agrega {
+  transform: translate(70%, 180%);
+  font-size: 14px;
+  width: 50%;
+  height: 2%;
+  justify-items: center;
+  padding: 1px;
+  box-shadow: 10px 3px 3px black;
+}
+
+.contenedor-edicion {
+  position: fixed;
+  box-shadow: 10px 3px 3px black;
+  top: 90%;
+  left: 5%;
+  margin: auto;
+  height: 500px;
+  width: 406px;
+  background: linear-gradient(to right, #7741e3, #a172c9);
+  transform: translate(-5%, -65%);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+ border-radius: 10px 10px;
+}
+
+.formulario-edicion {
+  width: 25%;
+  height: 5%;
+  display: flex;
+  flex-direction: column;
+}
+
+td {
+  width: 50%;
+}
+
+table {
+  position: relative;
+  transform: translateY(10%);
+  left: 5%;
+  bottom: 10%;
+  border-spacing: 0;
+  border: none;
+  border-collapse: separate;
+  border-spacing: 2px;
+
+
+}
+
+
+.tabla-filtro {
+  position: relative;
+  margin: auto;
+  border-collapse: separate;
+  border-spacing: 10px 5px;
+}
+
+.contenedor-filtro {
+  width: 80%;
+  position: relative;
+  transform: translate(1%, 120%);
+  margin: auto;
+  justify-self: center;
+}
+
+
+
+.lista-vacia {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  box-shadow: 10px 3px 3px black;
+}
+
+.editContactForm {
+  position: fixed;
+  width: 80%;
+  margin: auto;
+
+}
+
+.btn-edicion {
+  position: relative;
+  margin-top: 10px;
+  box-shadow: 10px 3px 3px black;
+  font-size: 14px;
+  width: 150px;
+  height: 5%;
+}
+
+
+.contenedor-btn-lista {
+  display: flex;
+  flex-direction: row;
+  gap: 5%;
+
+}
+
+.contenedor-lista {
+  position: relative;
+  display: flex;
+  width: 100%;
+  transform: translate(1%, 20%);
+}
+
+.datos {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+}
+
+
+
+.lista {
+  border-radius: 10px 10px; 
+  box-shadow: 10px 5px 5px black;
+  text-decoration: none;
+  overflow: scroll;
+  scrollbar-width: thin;          /* "auto" or "thin" */
+  scrollbar-color: blue rgb(162, 0, 255); 
+  scroll-behavior: auto;
+  left: 15%;
+  width: 400px;
+  height: 120px;
+  transform: translate(1%, 100%);
+}
+
+.lista-contactos{
+  list-style-type: none;
+}
+.parrafo-agrega {
+  font-weight: 700;
+}
+
+.contenedor-btn-lista {
+  margin-top: 2%;
+
+}
+
+.btn-lista {
+  justify-content: center;
+  box-shadow: 10px 3px 3px black;
+  font-size: 14px;
+  width: 48%;
+  height: 5%;
+}
+.detalle{
+  font-size: 16px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    display: flex;
+    position: relative;
+    transform: translate(2%, -30%);
+
+  }
+
+  .tabla-filtro {
+    border-collapse: separate;
+    border-spacing: 10px 5px;
+  }
+
+  .contenedor-edicion {
+    width: 350px;
+    height: 450px;
+    left: -2%;
+    transform: translate(4%, -50%);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+
+  }
+
+  .lista {
+    position: fixed;
+    overflow: scroll;
+    align-items: left;
+    justify-content: center;
+    text-align: left;
+    left: 2%;
+    width: 90%;
+    transform: translate(2%, 60%);
+  }
+
+  .lista-contactos {
+    position: relative;
+    transform: translate(-10px);
+    
+    text-align: center;
+  }
+
+  .contenedor-btn-lista {
+    margin-top: 2%;
+
+  }
+
+  .btn-lista {
+    justify-content: center;
+    font-size: 12px;
+    width: 50%;
+    height: 10%;
+  }
+}
